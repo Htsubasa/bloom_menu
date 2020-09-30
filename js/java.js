@@ -2,18 +2,12 @@
 $(function () {
   $(".slider").slick({
     arrow: true,
-    autoplay: true,
-    autoplaySpeed: 3500,
-    centerMode: true,
-    dots: true,
-    // fade: true,
-    slidesToShow: 2,
-    speed: 1000,
-    variableWidth: true,
-    centerMode: true,
-    centerPadding: '30%',
-    cssEase: 'linear',
-  });
+  centerMode: false,
+  dots: true,
+  autoplay:true,
+  autoplaySpeed:5000,  
+  slidesToShow: 1,
+});
 });
 
 
