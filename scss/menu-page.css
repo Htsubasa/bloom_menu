@@ -612,12 +612,24 @@ html body .mainvisual .mainvisual-wrap .mainvisual_text h1 .sub_mainvisual_text 
   font-weight: normal;
 }
 
+@media (max-width: 375px) {
+  html body .mainvisual .mainvisual-wrap .mainvisual_text h1 .sub_mainvisual_text {
+    font-size: 14px;
+  }
+}
+
 html body .mainvisual .mainvisual-wrap .mainvisual_text p {
   color: white;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 2;
+}
+
+@media (max-width: 375px) {
+  html body .mainvisual .mainvisual-wrap .mainvisual_text p {
+    font-size: 13px;
+  }
 }
 
 html body .mainvisual .mainvisual-wrap .mainvisual_text p .sp_br {
@@ -857,7 +869,7 @@ html body .menu_wrap .food_menu h2 {
     font-family: "Golden Plains - Demo";
     font-weight: normal;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 76px;
     opacity: 0;
     transform: translate(0, 30px);
     -webkit-transform: translate(0, 30px);
@@ -1725,13 +1737,13 @@ html body .menu_wrap .note_text h4 .sp_note_text {
 }
 
 html body .room {
-  margin-top: 152px;
+  margin-top: 143px;
   /*room-wrap*/
 }
 
 @media (max-width: 375px) {
   html body .room {
-    margin-top: 82px;
+    margin-top: 90px;
   }
 }
 
@@ -1768,8 +1780,8 @@ html body .room .room-wrap h2 {
   font-family: 'Golden Plains - Demo';
   font-weight: normal;
   position: absolute;
-  top: 36%;
-  left: 49%;
+  top: 41%;
+  left: 75%;
   text-align: center;
   margin: auto;
   width: 100%;
@@ -1790,7 +1802,7 @@ html body .room .room-wrap h2 {
 
 @media (max-width: 375px) {
   html body .room .room-wrap h2 {
-    top: 20%;
+    top: 30%;
     left: -4%;
     font-size: 47vw;
   }
@@ -1838,7 +1850,7 @@ html body .room .room-wrap .concept {
 
 @media (max-width: 375px) {
   html body .room .room-wrap .concept {
-    top: 87%;
+    top: 84%;
   }
 }
 
@@ -2002,7 +2014,7 @@ html body .room .room-wrap .concept:hover .cp_arrows {
 }
 
 html body .access {
-  margin-top: 120px;
+  margin-top: 124px;
   /*wrap*/
 }
 
@@ -2018,6 +2030,7 @@ html body .access-wrap h2 {
   color: #6CD6DB;
   letter-spacing: 0.05em;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
 }
 
 @media (max-width: 560px) {
@@ -2143,8 +2156,8 @@ html body .contact-wrapper .concept a .cp_arrows {
 
 @media (max-width: 375px) {
   html body .contact-wrapper .concept a .cp_arrows {
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -2178,8 +2191,8 @@ html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow'] {
   html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow'] {
     width: 10px;
     height: 12px;
-    top: -0.3em;
-    left: -3px;
+    top: 0em;
+    left: 2px;
     border-width: 2px 2px 0 0;
   }
 }
@@ -2251,7 +2264,7 @@ html body .contact-wrapper .concept a .concept-block h4 {
 
 @media (max-width: 375px) {
   html body .contact-wrapper .concept a .concept-block h4 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -2264,7 +2277,7 @@ html body .contact-wrapper .concept a .concept-block p {
 
 @media (max-width: 375px) {
   html body .contact-wrapper .concept a .concept-block p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -2295,7 +2308,7 @@ html body .contact .contact-wrapper::before {
 
 html body .footer {
   padding-top: 85px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   /*footer-nav*/
 }
 
