@@ -1454,101 +1454,89 @@ body{
       display: flex;
 
   
-    .cp_arrows {
-      border-radius: 50%;/*角丸*/
-      border: solid 3px #FFFFFF;
-      width: 76px;
-      height: 76px;
-
-      @include tab{
-        width: 56px;
-        height: 56px;
-      }
-
-
-      @include sp-second(){
-        width: 34px;
-        height: 34px;
-      }
-
-    }
-    .cp_arrows [class*='cp_arrow'] {
-        position: relative;
-        display: inline-block;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        vertical-align: middle;
-        color: #FFFFFF;
-    }
-    .cp_arrows [class*='cp_arrow']:after,
-    .cp_arrows [class*='cp_arrow']:before {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        content: '';
-    }
-    .cp_arrows [class*='cp_arrow'] {
-      width: 14px;
-      height: 15px;
-      top: 1em;
-      left: 14px;
-        margin: 0.8em;
-        border-width: 2px 2px 0 0;
-        border-style: solid;
-
-
-
-        @include sp-second(){
-          width: 10px;
-          height: 12px;  
-          top: -0.3em;
-          left: -3px;
-        }
-
-
-    }
-
-    .cp_arrows [class*='cp_arrow']:before,
-    .cp_arrows [class*='cp_arrow']:after {
-        position: absolute;
-    }
-
-    .cp_arrows [class*='cp_arrow']:before {
-        top: -1.7px;
-        right: 0;
-        width: 15px;
-        height: 2px;
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        -webkit-transform-origin: right top;
-                transform-origin: right top;
-        -webkit-box-shadow: inset 0 0 0 32px;
-                box-shadow: inset 0 0 0 24px;
-
-      
-    }
-    .cp_arrows [class*='cp_arrow']:after {
-        top: -4px;
-        left: -2px;
-        -webkit-box-shadow: inset 0 0 0 32px, 16px 17px;
-                box-shadow: inset 0 0 0 24px, 8px 9px;
-    }
-
-    .cp_arrows .cp_arrow_right_up {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-        
-        @include tab{
-            top: 0.4em;
-            left: 5px;
+      .cp_arrows {
+  
+        width: 76px;
+        height: 76px;
+          border-radius: 50%;/*角丸*/
+          border: solid 3px #FFFFFF;
+    
+          @include sp(){
+            width: 34px;
+            height: 34px;
           }
+    
+    
+      }
+      .cp_arrows [class*='cp_arrow'] {
+          position: relative;
+          display: inline-block;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          vertical-align: middle;
+          color: #FFFFFF;
+      }
+      .cp_arrows [class*='cp_arrow']:after,
+      .cp_arrows [class*='cp_arrow']:before {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          content: '';
+      }
+      .cp_arrows [class*='cp_arrow'] {
+        width: 14px;
+        height: 15px;
+        top: 1em;
+        left: 14px;
+          margin: 0.8em;
+          border-width: 4px 4px 0 0;
+          border-style: solid;
+    
+          @include sp(){
+            width: 10px;
+            height: 12px;  
+            top: -0.3em;
+            left: -3px;  
+            border-width: 2px 2px 0 0;
 
-          @include sp-second(){
-            top: -5px;
-            left: -4px;
           }
-    }
+    
+      }
+      .cp_arrows [class*='cp_arrow']:before,
+      .cp_arrows [class*='cp_arrow']:after {
+          position: absolute;
+      }
+    
+      .cp_arrows [class*='cp_arrow']:before {
+          top: -2px;
+          right: 1.3px;
+          width: 15px;
+          height: 4px;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          -webkit-transform-origin: right top;
+                  transform-origin: right top;
+          -webkit-box-shadow: inset 0 0 0 32px;
+                  box-shadow: inset 0 0 0 24px;
 
-
+              @include sp-second(){
+                width: 13px;
+                height: 2px;
+                right: 0.5px;
+                top: -2.5px;
+              }
+      }
+      .cp_arrows [class*='cp_arrow']:after {
+          top: -4px;
+          left: -2px;
+          -webkit-box-shadow: inset 0 0 0 32px, 16px 17px;
+                  box-shadow: inset 0 0 0 24px, 8px 9px;
+      }
+    
+      .cp_arrows .cp_arrow_right_up {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+      }
+    
 
     .concept-block{
 
