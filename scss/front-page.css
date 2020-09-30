@@ -345,12 +345,6 @@ html body header {
   /*header-inner*/
 }
 
-@media (max-width: 768px) {
-  html body header {
-    margin-bottom: 20px;
-  }
-}
-
 html body header img {
   position: absolute;
   z-index: -1;
@@ -376,12 +370,6 @@ html body header #header-inner {
   /*btn-gnavi*/
 }
 
-@media (max-width: 1180px) {
-  html body header #header-inner {
-    max-width: 90vw;
-  }
-}
-
 @media (max-width: 768px) {
   html body header #header-inner {
     padding-top: 20px;
@@ -390,7 +378,7 @@ html body header #header-inner {
 
 @media (max-width: 375px) {
   html body header #header-inner {
-    padding-top: 10px;
+    padding-top: 32px;
   }
 }
 
@@ -408,15 +396,9 @@ html body header #header-inner .logo {
   }
 }
 
-@media (max-width: 768px) {
-  html body header #header-inner .logo {
-    font-size: 2em;
-  }
-}
-
 @media (max-width: 375px) {
   html body header #header-inner .logo {
-    font-size: 2em;
+    font-size: 25px;
   }
 }
 

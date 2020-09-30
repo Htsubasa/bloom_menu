@@ -57,13 +57,11 @@ body{
     @include font-type-third;
 
 
+
+
     header{
 
       margin-bottom: 28px;
-
-      @include tab{
-        margin-bottom: 20px;
-      }
     
       img{
         position: absolute;
@@ -80,17 +78,13 @@ body{
         padding-right: 15px;
         padding-left: 15px;
         box-sizing: border-box;
-
-        @include pc{
-          max-width: 90vw;
-        }
     
         @include tab{
           padding-top: 20px;  
         }
     
       @include sp-second{
-        padding-top: 10px; 
+        padding-top: 32px; 
       }
        
         
@@ -105,15 +99,10 @@ body{
           @include pc {
             font-size: 2.5em;
           }
-
-          @include tab {
-            font-size: 2em;
-          }
-
     
     
           @include sp-second {
-            font-size: 2em;
+            font-size: 25px;
           }
     
           a{
@@ -180,7 +169,6 @@ body{
     
         }/*header-nav*/
     
-      
     
     
     

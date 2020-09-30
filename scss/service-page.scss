@@ -76,7 +76,7 @@ body{
         }
     
       @include sp-second{
-        padding-top: 10px; 
+        padding-top: 32px; 
       }
        
         
@@ -94,7 +94,7 @@ body{
     
     
           @include sp-second {
-            font-size: 2em;
+            font-size: 25px;
           }
     
           a{
@@ -263,20 +263,27 @@ body{
     .mainvisual-wrap{
         position: relative;
         background-image: url(../img/service/service_main.png);
-        background-size: contain;
+        background-size: 100% 770px;
         text-align: center;
         width: 95%;
-        height: 710px;
+        height: 770px;
         margin: 0 auto;
     
+
+        @include sp{
+          background-image: url(../img/service/service_sp.png);
+    
+        }
     
         @include sp-second(){
+          background-size: 100% 715px;
           width: 94.5%;
           margin-right: 10px;
           margin-left: 10px;
           height: 715px;
         }
     
+
     
         .mainvisual_text{
         
@@ -327,6 +334,10 @@ body{
               font-weight: normal;
               line-height: 2;
 
+              @include sp-second(){
+                font-size: 13px;
+              }
+
               .sp_br{
                 display: initial;
       
@@ -355,23 +366,22 @@ body{
     }/*mainvisual-wrap*/
     
     
-
-.mainvisual-wrap::before {
-  width: 100%;
-  z-index: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.3);
-  height: 710px;
-
-  @include sp-second(){
-    height: 715px;
-  }
- 
-}
+    .mainvisual-wrap::before {
+      width: 100%;
+      z-index: 0;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.3);
+      height: 770px;
+    
+      @include sp-second(){
+        height: 715px;
+      }
+     
+    }
     
 }/*mainvisual*/
     
@@ -382,6 +392,10 @@ body{
     margin: 0 auto;
     margin-top: 160px;
 
+
+    @include sp-second(){
+      margin-top: 96px;
+    }
   
     h2{
       margin-top: 50px;
@@ -983,6 +997,7 @@ body{
 
 
 
+
 .contact{
 
   &-wrapper{
@@ -1020,7 +1035,7 @@ body{
           border-radius: 50%;/*角丸*/
           border: solid 3px #FFFFFF;
     
-          @include sp(){
+          @include sp-second(){
             width: 34px;
             height: 34px;
           }
@@ -1050,7 +1065,7 @@ body{
           border-width: 4px 4px 0 0;
           border-style: solid;
     
-          @include sp(){
+          @include sp-second(){
             width: 10px;
             height: 12px;  
             top: -0.3em;
@@ -1080,8 +1095,8 @@ body{
               @include sp-second(){
                 width: 13px;
                 height: 2px;
-                right: 0.5px;
-                top: -2.5px;
+                right: -0.3px;
+                top: -2.3px;
               }
       }
       .cp_arrows [class*='cp_arrow']:after {
@@ -1329,9 +1344,7 @@ h2{
   }
 
 }/*hover*/
-
 }/*footer-nav*/
 }
 }/*body*/
-
 }

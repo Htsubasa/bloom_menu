@@ -373,7 +373,7 @@ html body header #header-inner {
 
 @media (max-width: 375px) {
   html body header #header-inner {
-    padding-top: 10px;
+    padding-top: 32px;
   }
 }
 
@@ -393,7 +393,7 @@ html body header #header-inner .logo {
 
 @media (max-width: 375px) {
   html body header #header-inner .logo {
-    font-size: 2em;
+    font-size: 25px;
   }
 }
 
@@ -548,16 +548,23 @@ html body .mainvisual {
 html body .mainvisual .mainvisual-wrap {
   position: relative;
   background-image: url(../img/service/service_main.png);
-  background-size: contain;
+  background-size: 100% 770px;
   text-align: center;
   width: 95%;
-  height: 710px;
+  height: 770px;
   margin: 0 auto;
   /*mainvisual-text*/
 }
 
+@media (max-width: 560px) {
+  html body .mainvisual .mainvisual-wrap {
+    background-image: url(../img/service/service_sp.png);
+  }
+}
+
 @media (max-width: 375px) {
   html body .mainvisual .mainvisual-wrap {
+    background-size: 100% 715px;
     width: 94.5%;
     margin-right: 10px;
     margin-left: 10px;
@@ -616,6 +623,12 @@ html body .mainvisual .mainvisual-wrap .mainvisual_text p {
   line-height: 2;
 }
 
+@media (max-width: 375px) {
+  html body .mainvisual .mainvisual-wrap .mainvisual_text p {
+    font-size: 13px;
+  }
+}
+
 html body .mainvisual .mainvisual-wrap .mainvisual_text p .sp_br {
   display: initial;
 }
@@ -643,7 +656,7 @@ html body .mainvisual .mainvisual-wrap::before {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 710px;
+  height: 770px;
 }
 
 @media (max-width: 375px) {
@@ -659,6 +672,12 @@ html body .top_text_block {
   margin-top: 160px;
   /*h2*/
   /*p*/
+}
+
+@media (max-width: 375px) {
+  html body .top_text_block {
+    margin-top: 96px;
+  }
 }
 
 html body .top_text_block h2 {
@@ -1355,7 +1374,7 @@ html body .contact-wrapper .concept a .cp_arrows {
   border: solid 3px #FFFFFF;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 375px) {
   html body .contact-wrapper .concept a .cp_arrows {
     width: 34px;
     height: 34px;
@@ -1388,7 +1407,7 @@ html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow'] {
   border-style: solid;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 375px) {
   html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow'] {
     width: 10px;
     height: 12px;
@@ -1420,8 +1439,8 @@ html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:before {
   html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:before {
     width: 13px;
     height: 2px;
-    right: 0.5px;
-    top: -2.5px;
+    right: -0.3px;
+    top: -2.3px;
   }
 }
 
